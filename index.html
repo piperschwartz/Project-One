@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <title>Foodle App</title>
+</head>
+
+<body>
+   <!-- Nav bar desktop screen -->
+   <nav>
+      <div class="nav-wrapper green lighten-2">
+         <a href="#!" class="brand-logo center"><img src="assets/FoodleLogo.png" class="logo"></a>
+         <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+
+         </a>
+         <ul class="right hide-on-med-and-down">
+            <li><a href="#">Recent Searches</a></li>
+            <li><a href="#">Saved Searches</a></li>
+            <li id="newSearch"><a href="#">New Search</a></li>
+         </ul>
+      </div>
+   </nav>
+   <!-- Nav bar mobile screen -->
+   <ul class="sidenav" id="mobile-links">
+      <li><a href="#">Recent Searches</a></li>
+      <li><a href="#">Saved Searches</a></li>
+      <li id="newSearch"><a href="#">New Search</a></li>
+   </ul>
+
+   <!-- Div for the whole image background -->
+   <!-- <div class="wholephoto" id="tagline">
+      <div class="container valign-wrapper">
+         <div class="row">
+            <h1 class="findrecipe white-text">Find a recipe</h1>
+            <div class="input-field col m10">
+               <form action="submit">
+                  <input id="search" class="materialize-input white" placeholder="Search"></input>
+                  <label for="textarea1">Search</label>
+            </div>
+            <div class="input-field col m2">
+               <button class="btn-small waves-effect waves-light purple" type="submit" name="action" id="searchBtn">
+                  <i class="material-icons center">search</i>
+               </button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div> -->
+
+   <!-- Image with search area -->
+   <div class="jumbotron" id="tagline">
+   <!-- <div class="parallax-container">
+      <div class="parallax"><img src="assets/Pasta.jpg"></div> -->
+         <div class="container valign-wrapper">
+            <div class="row">
+               <h1 class="findrecipe white-text">Find a recipe</h1>
+               <div class="input-field col m10">
+                  <form action="submit">
+                     <input id="search" class="materialize-input white" placeholder="Search"></input>
+                     <label for="textarea1"></label>
+               </div>
+                  <div class="input-field col m2">
+                     <button class="btn-small waves-effect waves-light purple" type="submit" name="action" id="searchBtn">
+                        <i class="material-icons center">search</i>
+                     </button>
+                  </form>
+               </div>
+            <!-- </div> -->
+               <div class="col s4 offset-s4">
+                  <button class="btn-small waves-effect waves-light purple center" id="myBtn">Subscribe!</button>
+               </div>
+            </div>   
+         </div>
+   </div>
+
+   <!-- Cards where recipes will populate -->
+   <div id="card">
+      <div class="container">
+         <div class="row">
+            <div class="col s12 m6 offset-m3">
+               <!-- Trigger/Open The Modal -->
+
+               <!-- The Modal -->
+               <div id="myModal" class="modal">
+                  ​
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                     <span class="close">&times;</span>
+                     <h3 class="center">Subscribe To Our Newsletter!</h3><br><br>
+                     <form action="/action_page.php">
+                        <fieldset>
+                           <legend>Personal information:</legend>
+                           First name:<br>
+                           <input type="text" name="firstname" placeholder="John"><br>
+                           Last name:<br>
+                           <input type="text" name="lastname" placeholder="Smith"><br><br>
+                           <input type="text" name="email" placeholder="example@you.com"><br><br>
+                           <button id="modal-submit" class="btn waves-effect waves-light purple" type="submit" name="action">Submit
+                              <i class="material-icons right">send</i>
+                           </button>
+                        </fieldset>
+                     </form>
+                  </div>
+                  ​
+               </div>
+               <div class="card" id="recipeCard">
+                  <!--where the cards go-->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Page footer -->
+   <footer class="page-footer green lighten-2">
+      <div class="footer-copyright">
+         <div class="container center-align">&copy; 2019 Foodle</div>
+      </div>
+   </footer>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="assets/css/style.css" />
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
